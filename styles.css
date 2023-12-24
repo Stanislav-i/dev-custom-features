@@ -1,0 +1,178 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    background-color: rgb(59, 4, 52);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.cm-wrapper {
+    display: flex;
+    width: 300px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    cursor: pointer;   
+    position: relative;
+}
+
+.circles-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cm-initial-circle {
+    width: 50px;
+    height: 50px;
+    border: 3px solid blueviolet;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+.cm-circle-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgb(43, 226, 58);
+    color: rgb(255, 255, 255);
+
+    position: absolute;
+}
+
+.cm-circle-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgb(97, 22, 203);
+    color: rgb(255, 255, 255);
+
+    position: absolute;
+}
+
+.cm-circle-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgb(18, 156, 242);
+    color: rgb(255, 255, 255);
+
+    position: absolute;
+}
+
+.cm-wrapper:hover .cm-initial-circle {
+    animation: rotate-main 300ms linear;
+
+}
+
+.cm-wrapper:hover .cm-circle-1 {
+    animation: 
+        roll-1 500ms linear alternate forwards, 
+        border-color 500ms linear alternate forwards;
+}
+
+.cm-wrapper:hover .cm-circle-2 {
+    animation: 
+        roll-2 500ms linear alternate forwards, 
+        border-color 500ms linear alternate forwards;
+}
+
+.cm-wrapper:hover .cm-circle-3 {
+    animation: 
+        roll-3 500ms linear alternate forwards, 
+        border-color 500ms linear alternate forwards;
+}
+
+@keyframes roll-1 {
+    0% {
+        transform: translateX(0px) rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: translateX(245px) rotate(360deg) scale(1.1);
+    }
+}
+
+@keyframes roll-2 {
+    0% {
+        transform: translateX(0px) rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: translateX(155px) rotate(360deg) scale(1.2);
+    }
+}
+
+@keyframes roll-3 {
+    0% {
+        transform: translateX(0px) rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: translateX(75px) rotate(360deg) scale(1.35);
+    }
+}
+
+@keyframes border-color {
+    0% {
+
+    }
+
+    50% {
+        border-color: rgb(221, 245, 7);
+    }
+
+    100% {
+        border-color: rgb(243, 86, 39);
+    }
+}
+
+@keyframes rotate-main {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
